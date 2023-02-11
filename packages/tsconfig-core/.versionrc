@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "tsconfig-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/tsconfig-core@{{currentTag}}"
+}

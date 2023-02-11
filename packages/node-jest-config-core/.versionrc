@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "node-jest-config-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/node-jest-config-core@{{currentTag}}"
+}

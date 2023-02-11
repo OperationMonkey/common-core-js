@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "vite-jest-config-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/vite-jest-config-core@{{currentTag}}"
+}

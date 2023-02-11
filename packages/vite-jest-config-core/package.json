@@ -1,0 +1,17 @@
+{
+  "name": "@operationmonkey/vite-jest-config-core",
+  "version": "1.0.0",
+  "main": "jest.config.js",
+  "files": [
+    "CHANGELOG.md",
+    "jest.config.js"
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "@types/jest": "^29.4.0",
+    "jest": "^29.4.2",
+    "ts-jest": "^29.0.5"
+  }
+}

@@ -1,0 +1,36 @@
+on:
+  push:
+    tags:
+      - "**"
+
+jobs:
+  test-and-lint:
+    uses: OperationMonkey/shared-workflows/.github/workflows/test_and_lint.yml@main
+
+  eslint-config-core:
+    if: ${{ startsWith(github.ref_name, 'eslint-config-core') }}
+    uses: <this-will-be-our-publish-npm-workflow>
+    secrets: inherit
+    with:
+      workspace: packages/eslint-config-core
+
+  node-jest-config-core:
+    if: ${{ startsWith(github.ref_name, 'node-jest-config-core') }}
+    uses: <this-will-be-our-publish-npm-workflow>
+    secrets: inherit
+    with:
+      workspace: packages/node-jest-config-core
+
+  tsconfig-core:
+    if: ${{ startsWith(github.ref_name, 'tsconfig-core') }}
+    uses: <this-will-be-our-publish-npm-workflow>
+    secrets: inherit
+    with:
+      workspace: packages/tsconfig-core
+
+  vite-jest-config-core:
+    if: ${{ startsWith(github.ref_name, 'vite-jest-config-core') }}
+    uses: <this-will-be-our-publish-npm-workflow>
+    secrets: inherit
+    with:
+      workspace: packages/vite-jest-config-core
