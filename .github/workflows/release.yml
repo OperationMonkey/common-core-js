@@ -4,10 +4,11 @@ on:
       - "**"
 
 jobs:
-  test-and-lint:
+  test:
     uses: OperationMonkey/shared-workflows/.github/workflows/test_and_lint.yml@main
 
   eslint-config-core:
+    needs: [test]
     if: ${{ startsWith(github.ref_name, 'eslint-config-core') }}
     uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
     secrets: inherit
@@ -15,6 +16,7 @@ jobs:
       workspace: packages/eslint-config-core
 
   node-jest-config-core:
+    needs: [test]
     if: ${{ startsWith(github.ref_name, 'node-jest-config-core') }}
     uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
     secrets: inherit
@@ -22,6 +24,7 @@ jobs:
       workspace: packages/node-jest-config-core
 
   tsconfig-core:
+    needs: [test]
     if: ${{ startsWith(github.ref_name, 'tsconfig-core') }}
     uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
     secrets: inherit
@@ -29,6 +32,7 @@ jobs:
       workspace: packages/tsconfig-core
 
   vite-jest-config-core:
+    needs: [test]
     if: ${{ startsWith(github.ref_name, 'vite-jest-config-core') }}
     uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
     secrets: inherit
