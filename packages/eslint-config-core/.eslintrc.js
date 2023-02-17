@@ -1,22 +1,4 @@
-const reactOptions = {
-  settings: {
-    react: {
-      pragma: "React",
-      version: "detect"
-    }
-  },
-  env: {
-    browser: true,
-    es6: true,
-    jest: true
-  }
-}
-
-const reactRules = {
-  "react/prop-types": "off"
-}
-
-const rules = {
+const commonRules = {
   "@typescript-eslint/no-unused-vars": [
     "error",
     {
@@ -48,8 +30,28 @@ const rules = {
     { blankLine: "always", prev: "*", next: "function" },
     { blankLine: "always", prev: "function", next: "*" },
     { blankLine: "always", prev: "throw", next: "*" },
-    { blankLine: "always", prev: "*", next: "return" }
+    { blankLine: "always", prev: "*", next: "return" },
+    { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+    { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] }
   ]
+}
+
+const reactOptions = {
+  settings: {
+    react: {
+      pragma: "React",
+      version: "detect"
+    }
+  },
+  env: {
+    browser: true,
+    es6: true,
+    jest: true
+  }
+}
+
+const reactRules = {
+  "react/prop-types": "off"
 }
 
 const jestRules = {
@@ -67,6 +69,15 @@ module.exports = {
       extends: ["plugin:json/recommended"]
     },
     {
+      files: ["**/*.js"],
+      parserOptions: {
+        ecmaVersion: "latest"
+      },
+      env: {
+        "es6": true
+      }
+    },
+    {
       files: ["**/*.ts"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
@@ -81,7 +92,7 @@ module.exports = {
         "plugin:import/typescript"
       ],
       plugins: ["fp"],
-      rules: { ...rules }
+      rules: { ...commonRules }
     },
     {
       files: ["**/*.tsx"],
@@ -99,7 +110,7 @@ module.exports = {
       ],
       plugins: ["fp"],
       rules: {
-        ...rules,
+        ...commonRules,
         ...reactRules
       }
     },
@@ -119,7 +130,7 @@ module.exports = {
       ],
       plugins: ["jest", "fp"],
       rules: {
-        ...rules,
+        ...commonRules,
         ...jestRules
       }
     },
@@ -141,7 +152,7 @@ module.exports = {
       ],
       plugins: ["jest", "fp"],
       rules: {
-        ...rules,
+        ...commonRules,
         ...reactRules,
         ...jestRules
       }
