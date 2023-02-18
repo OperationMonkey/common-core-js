@@ -18,3 +18,9 @@ module.exports = {
   }
 }
 ```
+
+With React projects using vite, also add: 
+
+```
+projects: ["./tsconfig.json", "./vite.config.ts"]
+```
