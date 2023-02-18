@@ -1,6 +1,6 @@
 {
   "name": "@operationmonkey/tsconfig-core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "tsconfig.json",
   "files": [
     "react/tsconfig-react-base.json",
