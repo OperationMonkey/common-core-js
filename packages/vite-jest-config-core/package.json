@@ -1,6 +1,6 @@
 {
   "name": "@operationmonkey/vite-jest-config-core",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "jest.config.js",
   "files": [
     "CHANGELOG.md",
