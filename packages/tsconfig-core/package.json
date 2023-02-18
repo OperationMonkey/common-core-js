@@ -4,10 +4,9 @@
   "main": "tsconfig.json",
   "files": [
     "react/tsconfig-react-base.json",
-    "react/tsconfig.json",
+    "react/tsconfig-base.json",
     "tsconfig-base.json",
     "tsconfig-node-base.json",
-    "tsconfig-react-base.json",
     "tsconfig.json"
   ],
   "scripts": {
