@@ -19,8 +19,9 @@ module.exports = {
 }
 ```
 
-With React projects using vite, also add: 
+With React projects using Vite, create `.eslintignore` with following content: 
 
 ```
-projects: ["./tsconfig.json", "./vite.config.ts"]
+vite.config.ts
 ```
+
