@@ -4,7 +4,8 @@
   "main": "jest.config.js",
   "files": [
     "CHANGELOG.md",
-    "jest.config.js"
+    "jest.config.js",
+    "jest.setup.js"
   ],
   "scripts": {
     "release": "standard-version"
