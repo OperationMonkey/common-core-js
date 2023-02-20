@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "commitlint-config-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/commitlint-config-core@{{currentTag}}"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@operationmonkey/commitlint-config-core",
+  "version": "1.0.0",
+  "main": "commitlint.config.js",
+  "files": [
+    "commitlint.config.js",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2"
+  }
+}
