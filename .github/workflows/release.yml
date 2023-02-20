@@ -7,6 +7,14 @@ jobs:
   test:
     uses: OperationMonkey/shared-workflows/.github/workflows/test_and_lint.yml@main
 
+  commitlint-config-core:
+    needs: [test]
+    if: ${{ startsWith(github.ref_name, 'commitlint-config-core') }}
+    uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
+    secrets: inherit
+    with:
+      workspace: packages/commitlint-config-core
+
   eslint-config-core:
     needs: [test]
     if: ${{ startsWith(github.ref_name, 'eslint-config-core') }}
