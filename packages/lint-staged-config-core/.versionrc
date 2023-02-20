@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "lint-staged-config-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/lint-staged-config-core@{{currentTag}}"
+}

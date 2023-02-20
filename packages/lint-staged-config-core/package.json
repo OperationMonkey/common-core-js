@@ -1,0 +1,15 @@
+{
+  "name": "@operationmonkey/lint-staged-config-core",
+  "version": "1.0.0",
+  "main": "lint-staged.config.js",
+  "files": [
+    "lint-staged.config.js",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "lint-staged": "^13.1.2"
+  }
+}
