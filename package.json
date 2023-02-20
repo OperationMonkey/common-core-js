@@ -6,9 +6,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "standard-version": "^9.5.0"
+    "husky": "8.0.3",
+    "standard-version": "9.5.0"
   },
   "workspaces": [
     "packages/*"

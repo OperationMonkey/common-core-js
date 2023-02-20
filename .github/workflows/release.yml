@@ -23,6 +23,14 @@ jobs:
     with:
       workspace: packages/eslint-config-core
 
+  lint-staged-config-core:
+    needs: [test]
+    if: ${{ startsWith(github.ref_name, 'lint-staged-config-core') }}
+    uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
+    secrets: inherit
+    with:
+      workspace: packages/lint-staged-config-core
+
   node-jest-config-core:
     needs: [test]
     if: ${{ startsWith(github.ref_name, 'node-jest-config-core') }}
