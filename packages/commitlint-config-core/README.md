@@ -22,7 +22,7 @@ Make sure you have `husky` installed and prepared. Then run command:
 npx husky add .husky/commit-msg  'npx --no -- commitlint --edit ${1}'
 ```
 
-or create file `.husky/commit-msg` with content: 
+or create file `.husky/commit-msg` with content (and chmod +x): 
 
 ```
 #!/bin/sh
