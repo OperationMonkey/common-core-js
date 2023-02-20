@@ -1,4 +1,4 @@
-# @operationmonkey
+# @operationmonkey/lint-staged-config-core
 
 ## Install
 
