@@ -2,7 +2,7 @@
   "scripts": {
     "build": "npm run --workspaces --if-present build",
     "lint": "eslint '**/*.{js,jsx,json,ts,tsx}' --quiet",
-    "prepare": "husky install",
+    "husky:prepare": "husky install",
     "test": "jest"
   },
   "devDependencies": {
