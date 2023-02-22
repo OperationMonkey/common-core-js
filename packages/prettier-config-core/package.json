@@ -1,0 +1,15 @@
+{
+  "name": "@operationmonkey/prettier-config-core",
+  "version": "1.0.0",
+  "main": "prettier.config.js",
+  "files": [
+    "prettier.config.js",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "prettier": "2.8.4"
+  }
+}
