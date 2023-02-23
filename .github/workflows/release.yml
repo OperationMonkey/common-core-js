@@ -39,6 +39,14 @@ jobs:
     with:
       workspace: packages/node-jest-config-core
 
+  prettier-config-core:
+    needs: [test]
+    if: ${{ startsWith(github.ref_name, 'prettier-config-core') }}
+    uses: OperationMonkey/shared-workflows/.github/workflows/publish_npm.yml@main
+    secrets: inherit
+    with:
+      workspace: packages/prettier-config-core
+
   tsconfig-core:
     needs: [test]
     if: ${{ startsWith(github.ref_name, 'tsconfig-core') }}
