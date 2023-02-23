@@ -1,0 +1,5 @@
+{
+  "path": ".",
+  "tagPrefix": "prettier-config-core/v",
+  "releaseCommitMessageFormat": "chore: release @operationmonkey/prettier-config-core@{{currentTag}}"
+}
