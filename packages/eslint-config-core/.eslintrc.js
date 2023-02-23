@@ -5,11 +5,15 @@ const commonRules = {
       argsIgnorePattern: "^_"
     }
   ],
+  "@typescript-eslint/semi": "error",
   "@typescript-eslint/consistent-type-imports": "error",
   "@typescript-eslint/explicit-function-return-type": "error",
   "no-return-await": "off",
   "@typescript-eslint/return-await": ["error", "in-try-catch"],
   eqeqeq: "error",
+  quotes: [
+    "error", "double"
+  ],
   "import/order": [
     "error",
     {
