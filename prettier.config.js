@@ -1,1 +1,1 @@
-module.exports = requite("@operationmonkey/prettier-config-core")
+module.exports = require("@operationmonkey/prettier-config-core")
