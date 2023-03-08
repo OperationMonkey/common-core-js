@@ -8,10 +8,10 @@ npm install --save-exact --save-dev @operationmonkey/vite-jest-config-core
 
 ## Use
 
-With React apps, create `jest.config.js` containing: 
+With React apps, create `jest.config.js` containing:
 
 ```
-module.exports = requite("@operationmonkey/vite-jest-config-core")
+module.exports = require("@operationmonkey/vite-jest-config-core")
 ```
 
 ## Dependencies
