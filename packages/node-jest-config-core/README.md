@@ -8,8 +8,8 @@ npm install --save-exact --save-dev @operationmonkey/node-jest-config-core
 
 ## Use
 
-With node apps, create `jest.config.js` containing: 
+With node apps, create `jest.config.js` containing:
 
 ```
-module.exports = requite("@operationmonkey/node-jest-config-core")
+module.exports = require("@operationmonkey/node-jest-config-core")
 ```
