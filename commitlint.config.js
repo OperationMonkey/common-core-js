@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@operationmonkey/commitlint-config-core']
+  extends: ["@operationmonkey/commitlint-config-core"]
 }
