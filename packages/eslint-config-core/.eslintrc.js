@@ -37,7 +37,14 @@ const commonRules = {
     { blankLine: "always", prev: "*", next: "return" },
     { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
     { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] }
-  ]
+  ],
+  "comma-dangle": ["error", {
+    arrays: "only-multiline",
+    objects: "only-multiline",
+    imports: "only-multiline",
+    exports: "only-multiline",
+    functions: "never"
+  }]
 }
 
 const reactOptions = {
