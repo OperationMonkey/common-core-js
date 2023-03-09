@@ -1,6 +1,6 @@
 {
   "name": "@operationmonkey/prettier-config-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "prettier.config.js",
   "files": [
     "prettier.config.js",
