@@ -16,7 +16,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
+    "removeComments": true,
     "strict": true,
-    "noEmit": true
+    "emitDecoratorMetadata": true,
+    "noEmit": false
   }
 }
