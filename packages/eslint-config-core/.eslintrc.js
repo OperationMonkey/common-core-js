@@ -32,6 +32,15 @@ const commonTsRules = {
   "@typescript-eslint/semi": "error",
   "@typescript-eslint/consistent-type-imports": "error",
   "@typescript-eslint/explicit-function-return-type": "error",
+  "@typescript-eslint/explicit-member-accessibility": [
+    "error",
+    {
+      accessibility: "explicit",
+      overrides: {
+        accessors: "off",
+      },
+    },
+  ],
   "no-return-await": "off",
   "@typescript-eslint/return-await": ["error", "in-try-catch"],
   "import/order": [
