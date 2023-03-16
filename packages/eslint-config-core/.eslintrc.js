@@ -10,6 +10,7 @@ const commonRules = {
     { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
     { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] },
   ],
+  "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
   "comma-dangle": [
     "error",
     {
