@@ -1,6 +1,6 @@
 const commonRules = {
   eqeqeq: "error",
-  quotes: ["error", "double"],
+  quotes: ["error", "double", { avoidEscape: true }],
   "padding-line-between-statements": [
     "error",
     { blankLine: "always", prev: "*", next: "function" },
