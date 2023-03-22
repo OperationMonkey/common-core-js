@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/OperationMonkey/common-core-js/compare/eslint-config-core/v1.1.0...eslint-config-core/v1.2.0) (2023-03-22)
+
+### Features
+
+- add rules about class member spacing ([#18](https://github.com/OperationMonkey/common-core-js/issues/18)) ([6990416](https://github.com/OperationMonkey/common-core-js/commit/6990416fa34e6292c179bc6a21d545c382e3dbb9))
+
+### Bug Fixes
+
+- avoid escape with quotes ([#19](https://github.com/OperationMonkey/common-core-js/issues/19)) ([0445dac](https://github.com/OperationMonkey/common-core-js/commit/0445dac84f66ec436c5cc76c18d56b82cc1698c3))
+
 ## [1.1.0](https://github.com/OperationMonkey/common-core-js/compare/eslint-config-core/v1.0.2...eslint-config-core/v1.1.0) (2023-03-16)
 
 ### Features
