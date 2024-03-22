@@ -13,6 +13,6 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "typescript": "^4.9.4"
+    "typescript": "^5.4.3"
   }
 }
