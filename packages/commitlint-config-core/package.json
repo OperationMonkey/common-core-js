@@ -1,6 +1,6 @@
 {
   "name": "@operationmonkey/commitlint-config-core",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "commitlint.config.js",
   "files": [
     "commitlint.config.js",
