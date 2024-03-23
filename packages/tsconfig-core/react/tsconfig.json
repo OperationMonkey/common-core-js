@@ -4,8 +4,11 @@
     "../../../../src/**/*",
     "../../../../test/**/*"
   ],
-  "exclude": [],
+  "exclude": [
+    "../../../../build/**/*"
+  ],
   "compilerOptions": {
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "outDir": "../../../../build"
   }
 }
