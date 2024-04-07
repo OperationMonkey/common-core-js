@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/OperationMonkey/common-core-js/compare/tsconfig-core/v2.1.0...tsconfig-core/v2.1.1) (2024-04-07)
+
+### Bug Fixes
+
+- es2023 to es2022 ([#27](https://github.com/OperationMonkey/common-core-js/issues/27)) ([32f79c4](https://github.com/OperationMonkey/common-core-js/commit/32f79c4fcdf22156dd9fd6e2bd46f2c16917bee8))
+
 ## [2.1.0](https://github.com/OperationMonkey/common-core-js/compare/tsconfig-core/v2.0.2...tsconfig-core/v2.1.0) (2024-04-07)
 
 ### Features
