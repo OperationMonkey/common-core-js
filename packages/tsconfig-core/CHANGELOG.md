@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/OperationMonkey/common-core-js/compare/tsconfig-core/v2.0.2...tsconfig-core/v2.1.0) (2024-04-07)
+
+### Features
+
+- update ECMAScript version ([#25](https://github.com/OperationMonkey/common-core-js/issues/25)) ([772be0b](https://github.com/OperationMonkey/common-core-js/commit/772be0b64d627566c42e999e5f4d9f6d24493741))
+
 ### [2.0.2](https://github.com/OperationMonkey/common-core-js/compare/tsconfig-core/v2.0.0...tsconfig-core/v2.0.2) (2024-03-23)
 
 ### Bug Fixes
